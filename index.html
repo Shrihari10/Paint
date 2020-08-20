@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <div class="toolbox">
+    <div class="utilities pencil" id="pencil">
+        <img src="pencil.svg">
+    </div>
+    <div class="utilities erase" id="erase">
+        <img src="clean.svg">
+    </div>
+    <div class="utilities rectangle" id="rectangle">
+        <img src="rectangle.svg">
+    </div>
+    <div class="utilities circle" id="circle">
+        <img src="oval.svg">
+    </div>
+    <div class="utilities clear" id="clear">
+        <img src="clear.svg">
+    </div>
+    </div>
+    <div id="colors">
+        <div style="margin-top:8px; margin-bottom: 8px; width: fit-content;">
+            <label for="color">Select Color</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+            <label for="thickness">Enter Thickness</label>
+            <input type="number" id="thickness">
+        </div>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+    <script src="paint.js"></script>
+</body>
+</html>
